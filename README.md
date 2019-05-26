@@ -10,6 +10,6 @@ O objetivo do trabalho é fazer uma comparação de qual algoritmo é mais efici
 * MergeSort 
 * Função nativa ".sort()" do python
 
-**Printscreen**
+
 ![ep1](https://user-images.githubusercontent.com/36762964/58387191-5c096700-7fe1-11e9-8500-9c7aa60d8a38.png)
 
