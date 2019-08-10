@@ -3,7 +3,7 @@ Exercícios e trabalhos desenvolvidos no decorrer da matéria de Estrutura de Da
 
 ## Projetos
 ## EP1 - Comparação do tempo de execução dos principais algoritmos de ordenação
-O objetivo do trabalho é fazer uma comparação de qual algoritmo é mais eficiente levando em conta o tempo de ordenagem dos vetores.
+O objetivo do trabalho é fazer uma comparação de qual algoritmo é mais eficiente levando em consideração o tempo de ordenação dos vetores.
 
 **Algoritmo que cronometra o tempo de execução dos algoritmos de ordenação:**
 * QuickSort 
