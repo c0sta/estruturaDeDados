@@ -1,6 +1,6 @@
 # Estrutura de Dados
 Exercícios e trabalhos desenvolvidos no decorrer da matéria de Estrutura de Dados.
-Aulas ministradas por: [Prof. Fernando Masanori](https://github.com/fmasanori)
+Aulas ministradas pelo: [Prof. Fernando Masanori](https://github.com/fmasanori)
 
 ## Projetos
 ## EP1 - Comparação do tempo de execução dos principais algoritmos de ordenação
