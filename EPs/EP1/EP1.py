@@ -18,10 +18,10 @@ def seleção(lista):
     global contSelec
     contSelec = 0
     while lista:
-        contSelec += 1
         menor = min(lista)
         vet.append(menor)
         lista.remove(menor)
+        contSelec += 1
     return vet
 
 
@@ -29,15 +29,16 @@ def seleção(lista):
 def inserção(v):
     global contInsert
     contInsert = 0
+    # print(len(v))
     for j in range(1, len(v)):
         x = v[j]
         i = j - 1
         while i >= 0 and v[i] > x:
             v[i + 1] = v[i]
             i = i - 1
-            contInsert = contInsert + 1
         v[i + 1] = x
-        return v
+        contInsert += 1
+    return v
 
 
 # Algoritmo MergeSort
@@ -79,10 +80,26 @@ def quick(lista):
     if len(lista) <= 1:
         return lista
     inicio = lista[0]
-    iguais = [x for x in lista if x == inicio]
-    menores = [x for x in lista if x < inicio]
-    maiores = [x for x in lista if x > inicio]
-    contQuick += 1
+    while(contQuick < len(lista)):
+        # iguais = [x for x in lista if x == inicio]
+        contQuick += 1
+        iguais = []
+        for x in lista:
+            if x == inicio:
+                iguais.append(x)
+            return x
+        # menores = [x for x in lista if x < inicio]
+        menores = []
+        for x in lista:
+            if x < inicio:
+                menores.append(x)
+            return x
+        # maiores = [x for x in lista if x > inicio]
+        maiores = []
+        for x in lista:
+            if x > inicio:
+                maiores.append(x)
+            return x
     return quick(menores) + iguais + quick(maiores)
 
 # Cronometra tempo de execução da função nativa .sort()
@@ -108,7 +125,6 @@ def cronometraSeleção(lista):
 
 
 def cronometraInserção(lista):
-    lista = lista.copy()
     inicio = time.time()
     inserção(lista)
     fim = time.time()
@@ -145,7 +161,7 @@ print("-------------------------------------------------------------------------
 print(
     "|                                            [EP1] - Vale a pena ordenar?                                               |")
 print('| Algoritmo escolhido: Todos                                             Duração dos testes 30.00                     |')
-print('| Alunos: Gabriel Costa, Raphael Ribeira de Paula e William Barreto                                                   |')
+print('| Alunos: Gabriel Costa, Raphael  Ribeira De Paula e William Barreto                                                   |')
 print("|---------------------------------------------------------------------------------------------------------------------|")
 
 print("|---------------------------Tempo de Ordenação----------------------|--------------Numero de Buscas-------------------|")
